@@ -1,0 +1,18 @@
+:host {
+  margin-bottom: 40px;
+
+  .infos-container{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    flex-wrap: wrap;
+  }
+
+  mat-card {
+    min-width: 100px;
+    max-width: 300px;
+    mat-card-header {
+      padding: 16px;
+    }
+  }
+}
