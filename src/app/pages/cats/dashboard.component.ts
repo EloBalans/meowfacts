@@ -19,24 +19,23 @@ import {finalize, take} from "rxjs";
 import {MatSnackBar} from "@angular/material/snack-bar";
 
 @Component({
-  selector: 'app-dashboard',
-  standalone: true,
-  imports: [
-    MatToolbar,
-    MatIconButton,
-    MatIcon,
-    MatCard,
-    MatCardContent,
-    MatCardFooter,
-    MatCardHeader,
-    MatCardSubtitle,
-    MatCardTitle,
-    ReactiveFormsModule,
-    CatInfosComponent,
-    MatButton
-  ],
-  templateUrl: './dashboard.component.html',
-  styleUrl: './dashboard.component.scss'
+    selector: 'app-dashboard',
+    imports: [
+        MatToolbar,
+        MatIconButton,
+        MatIcon,
+        MatCard,
+        MatCardContent,
+        MatCardFooter,
+        MatCardHeader,
+        MatCardSubtitle,
+        MatCardTitle,
+        ReactiveFormsModule,
+        CatInfosComponent,
+        MatButton
+    ],
+    templateUrl: './dashboard.component.html',
+    styleUrl: './dashboard.component.scss'
 })
 export class DashboardComponent {
   private _auth = inject(AuthService);
