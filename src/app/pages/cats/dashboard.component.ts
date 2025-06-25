@@ -17,23 +17,25 @@ import {CatInfosComponent} from "../../components/cat-infos/cat-infos.component"
 import {CatInfosService} from "../../services/cat-infos/cat-infos.service";
 import {finalize, take} from "rxjs";
 import {MatSnackBar} from "@angular/material/snack-bar";
+import {MatProgressBar} from "@angular/material/progress-bar";
 
 @Component({
     selector: 'app-dashboard',
-    imports: [
-        MatToolbar,
-        MatIconButton,
-        MatIcon,
-        MatCard,
-        MatCardContent,
-        MatCardFooter,
-        MatCardHeader,
-        MatCardSubtitle,
-        MatCardTitle,
-        ReactiveFormsModule,
-        CatInfosComponent,
-        MatButton
-    ],
+  imports: [
+    MatToolbar,
+    MatIconButton,
+    MatIcon,
+    MatCard,
+    MatCardContent,
+    MatCardFooter,
+    MatCardHeader,
+    MatCardSubtitle,
+    MatCardTitle,
+    ReactiveFormsModule,
+    CatInfosComponent,
+    MatButton,
+    MatProgressBar,
+  ],
     templateUrl: './dashboard.component.html',
     styleUrl: './dashboard.component.scss'
 })

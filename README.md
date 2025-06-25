@@ -10,5 +10,5 @@
 ## Technologies
 - [Angular version 18](https://angular.dev/)
 - [RxJS](https://rxjs.dev/)
-- [Angular Materials ](https://material.angular.dev/)
+- [Angular Materials](https://material.angular.dev/)
 

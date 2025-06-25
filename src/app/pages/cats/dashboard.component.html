@@ -22,12 +22,18 @@
     />
   </mat-card-content>
   <mat-card-footer>
+
+    @let load = loading();
   <button
     mat-flat-button
-    [disabled]="loading()"
+    [disabled]="load"
     (click)="loadNew()"
   >
-    Add new
+    @if (load) {
+      <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+    } @else {
+      <span> Add new</span>
+    }
   </button>
   </mat-card-footer>
 </mat-card>
